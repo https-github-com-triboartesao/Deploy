@@ -32,6 +32,9 @@ public class Produto {
 	@NotBlank
 	@Size(min=10, max=1000)
 	private String descricao;
+
+	@NotNull
+	private String foto;
 	
 	@NotNull
 	private int quantidade;
