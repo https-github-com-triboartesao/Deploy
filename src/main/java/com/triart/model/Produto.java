@@ -108,6 +108,14 @@ public class Produto {
 		this.usuario = usuario;
 	}
 
+	public String getFoto() {
+		return foto;
+	}
+
+	public void setFoto(String foto) {
+		this.foto = foto;
+	}
+
 	
 	
 }
