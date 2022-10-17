@@ -39,6 +39,7 @@ public class BasicSecurityConfig {
             .authorizeHttpRequests((auth) -> auth
                 .antMatchers("/usuarios/logar").permitAll()
                 .antMatchers("/usuarios/cadastrar").permitAll()
+                .antMatchers("/produtos").permitAll()
                 .antMatchers(HttpMethod.OPTIONS).permitAll()
                 .anyRequest().authenticated())
             .httpBasic();
